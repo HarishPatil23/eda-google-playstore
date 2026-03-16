@@ -12,7 +12,7 @@ eda-google-playstore/
 │    
 ├── EDA-google-playstore.ipynb   # Main analysis notebook (175 cells)
 │    
-└── README.md                        # Project documentation (this file)
+└── README.md                    # Project documentation (this file)
 ```
 
 ---
