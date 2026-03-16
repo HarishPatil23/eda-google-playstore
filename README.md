@@ -1,37 +1,25 @@
-# 📊 Google Play Store — Exploratory Data Analysis (EDA)
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?logo=pandas&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-0.13-4C8CBF)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-orange)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
+# Google Play Store - Exploratory Data Analysis (EDA)
 
 > A complete, structured exploratory data analysis on the Google Play Store dataset, covering data cleaning, feature engineering, correlation analysis, missing value treatment, and 10+ business-driven insights.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 eda-google-playstore/
-│
-├── data/
-│   └── googleplaystore_new.csv      # Raw dataset (scraped from Google Play Store)
-│
-├── notebooks/
-│   └── EDA-google-playstore.ipynb   # Main analysis notebook (175 cells)
-│
-├── requirements.txt                 # Python dependencies
-├── .gitignore                       # Files to exclude from version control
+├── googleplaystore_new.csv      # Raw dataset (scraped from Google Play Store)
+│    
+├── EDA-google-playstore.ipynb   # Main analysis notebook (175 cells)
+│    
 └── README.md                        # Project documentation (this file)
 ```
 
 ---
 
-## 📌 About the Dataset
+##  About the Dataset
 
-- **Source:** [Kaggle — Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps/)
+- **Source:** [Kaggle - Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps/)
 - **Records:** 10,841 rows × 13 columns (raw)
 - **Cleaned Records:** ~9,634 unique apps after deduplication
 
@@ -55,7 +43,7 @@ eda-google-playstore/
 
 ---
 
-## 🔧 Data Cleaning & Preprocessing
+##  Data Cleaning & Preprocessing
 
 | Step | Details |
 |---|---|
@@ -68,24 +56,24 @@ eda-google-playstore/
 
 ---
 
-## 📈 Exploratory Insights (10 Questions Answered)
+## Exploratory Insights (10 Questions Answered)
 
 | # | Question | Key Finding |
 |---|---|---|
 | 3.1 | Which category has the most apps? | **Family** (~1,900 apps) |
 | 3.2 | Which category has the most installs? | **Game** (13B+) |
-| 3.3 | Which category has the most reviews? | **Game** — highest user engagement |
+| 3.3 | Which category has the most reviews? | **Game** - highest user engagement |
 | 3.4 | Which category has the highest rating? | **Events, Art & Design, Books & Reference** (~4.4–4.5 avg) |
-| 3.5 | Which category generates most revenue (paid)? | **Family** — by a large margin |
+| 3.5 | Which category generates most revenue (paid)? | **Family** - by a large margin |
 | 3.6 | Do free apps have better ratings than paid? | **Paid** apps rate slightly higher and more consistently |
-| 3.7 | Which content rating group dominates? | **Everyone** — Play Store is primarily family-friendly |
+| 3.7 | Which content rating group dominates? | **Everyone** - Play Store is primarily family-friendly |
 | 3.8 | Which genres have the most high-rated apps? | **Board;Pretend Play**, **Comics;Creativity** (4.8 avg) |
-| 3.9 | Does app size affect rating? | **No strong relationship** — UX matters more than size |
-| 3.10 | Does price affect installs? | **Yes** — Higher price = sharply fewer installs |
+| 3.9 | Does app size affect rating? | **No strong relationship** - UX matters more than size |
+| 3.10 | Does price affect installs? | **Yes** - Higher price = sharply fewer installs |
 
 ---
 
-## 🧪 Statistical Analysis
+## Statistical Analysis
 
 - **Pearson Correlation** between `Reviews` and `Installs`: **r ≈ 0.64** (strong positive)
 - **Log transformation** applied to `Installs` and `Reviews` to normalize skewed distributions
@@ -93,24 +81,18 @@ eda-google-playstore/
 
 ---
 
-## 🔑 Key Conclusions
+## Key Conclusions
 
-- The Play Store is **user-driven** — affordability, reliability, and engagement drive success.
+- The Play Store is **user-driven** - affordability, reliability, and engagement drive success.
 - **Games, Family, and Lifestyle** dominate both reach and revenue.
 - **High-rated categories** tend to focus on creativity, education, and personalization.
 - **Paid apps** attract fewer downloads but deliver slightly higher user satisfaction.
-- No strong link between app size and rating — **performance and UX > size**.
+- No strong link between app size and rating - **performance and UX > size**.
 - Niche categories (Beauty, Comics, Parenting) represent **untapped market opportunities**.
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-pip install -r requirements.txt
-```
+##  Getting Started
 
 ### Run the Notebook
 
@@ -120,9 +102,7 @@ jupyter notebook notebooks/EDA-google-playstore.ipynb
 
 ---
 
-## 📦 Requirements
-
-See `requirements.txt` for the full list. Core dependencies:
+## Requirements
 
 - `pandas`
 - `numpy`
@@ -133,12 +113,12 @@ See `requirements.txt` for the full list. Core dependencies:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
-Dataset sourced from [Kaggle](https://www.kaggle.com/datasets/lava18/google-play-store-apps/) — originally scraped from the Google Play Store.
+Dataset sourced from [Kaggle](https://www.kaggle.com/datasets/lava18/google-play-store-apps/) - originally scraped from the Google Play Store.
